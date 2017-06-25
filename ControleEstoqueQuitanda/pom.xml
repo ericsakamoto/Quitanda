@@ -5,7 +5,7 @@
 
 	<groupId>quitanda</groupId>
 	<artifactId>controle-estoque</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 
 	<name>quitanda-controle-estoque</name>
 	<description>Sistema de controle de estoque</description>
