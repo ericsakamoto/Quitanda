@@ -81,6 +81,28 @@ public class ProdutoController {
 		}
 		return new ResponseProduto("0","Sucesso",produtos);
 	}
+	
+	/**
+	 * /product/get-by-id --> Return product by id.
+	 * 
+	 * @param id
+	 *            id do produto
+	 * @return Product or a message error if the user is not found.
+	 */
+	@RequestMapping("/product/get-by-id")
+	public Response getProdutoPorID(String id) {
+		Long l = new Long(id);
+		System.out.println("ID: " + l);
+		Produto produto = null;
+		try {
+			produto = produtoDao.findOne(l.longValue());
+			System.out.println("Nome: " + produto.getNome());
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			return new Response("999",ex.getMessage());
+		}
+		return new ResponseProduto("0","Sucesso",produto);
+	}	
 
 	/**
 	 * /product/update --> Atualizar o nome, tipo e unidade pelo ID.

@@ -13,8 +13,8 @@ public class MainController {
 	@Value("${application.name}")
 	private String applicationName = "Hello World";
 	
-	private String hostname = "ec2-54-233-157-191.sa-east-1.compute.amazonaws.com:8080";
-	//private String hostname = "localhost:8080";
+	//private String hostname = "ec2-54-233-157-191.sa-east-1.compute.amazonaws.com:8080";
+	private String hostname = "localhost:8080";
 
 	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
@@ -27,6 +27,7 @@ public class MainController {
 	public String produtos(Map<String, Object> model) {
 		model.put("applicationName", this.applicationName);
 		model.put("moduleName", "PRODUTOS");
+		model.put("hostname", hostname);
 		return "produtos";
 	}
 
@@ -45,12 +46,4 @@ public class MainController {
 		model.put("hostname", hostname);
 		return "incluirCompras";
 	}	
-	
-	@RequestMapping("/configuracoes")
-	public String configuracoes(Map<String, Object> model) {
-		model.put("applicationName", this.applicationName);
-		model.put("moduleName", "CONFIGURACOES");
-		return "configuracoes";
-	}
-	
 }

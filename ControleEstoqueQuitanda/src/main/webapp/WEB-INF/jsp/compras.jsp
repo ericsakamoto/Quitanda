@@ -44,6 +44,7 @@
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="/compras">Consultar Compras</a></li>
 					<li><a href="/compras/incluir">Incluir Compras</a></li>
+					<li><a href="/produtos">Consultar Produtos</a></li>
 				</ul>
 			</div>
 		</div>

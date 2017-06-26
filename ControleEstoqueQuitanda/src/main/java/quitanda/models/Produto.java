@@ -34,6 +34,10 @@ public class Produto {
 	// Tipo do Produto
 	@NotNull
 	private String tipo;
+	
+	// Unidade Padrão do Produto
+	@NotNull
+	private String unidade;	
 
 	// ------------------------
 	// PUBLIC METHODS
@@ -75,4 +79,14 @@ public class Produto {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
+
+	public String getUnidade() {
+		return unidade;
+	}
+
+	public void setUnidade(String unidade) {
+		this.unidade = unidade;
+	}
+	
+	
 } // class Produto

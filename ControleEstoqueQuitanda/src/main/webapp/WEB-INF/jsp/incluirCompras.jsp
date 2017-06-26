@@ -10,6 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="../css/quitanda.css" rel="stylesheet" />
 	<script>
 	var quitanda_app = angular.module('quitanda', []);
 		
@@ -107,6 +108,7 @@
 				<ul class="nav navbar-nav">
 					<li><a href="/compras">Consultar Compras</a></li>
 					<li class="active"><a href="/compras/incluir">Incluir Compras</a></li>
+					<li><a href="/produtos">Consultar Produtos</a></li>					
 				</ul>
 			</div>
 		</div>
@@ -162,7 +164,7 @@
 	  					<input type="number" class="form-control" id="preco" ng-model="preco" placeholder="00.00"/>
 					</div>
 					<div class="form-group">
-						<button class=".btn-primary" ng-click="inserirCompra()">Inserir</button>
+						<button class="btn btn-lg btn-primary btn-block" ng-click="inserirCompra()">Inserir</button>
 					</div>
 				</form>
 			</div>
