@@ -8,9 +8,9 @@
 	<version>0.0.4-SNAPSHOT</version>
 
 	<name>quitanda-controle-estoque</name>
-	<description>Sistema de controle de estoque</description>
+	<description>Sistema de controle de estoque da quitanda</description>
 	<packaging>war</packaging>
-	
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -71,5 +71,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>
